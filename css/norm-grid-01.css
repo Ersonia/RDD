@@ -1,0 +1,147 @@
+
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:white;
+}
+
+.page-wrapper {
+	width:1024px;
+	height:768px;
+	margin-left:auto;
+	margin-right:auto;]
+	display:block;
+	}
+
+.system-bar {
+	width:100%;
+	height:20px;
+	max-height:20px;
+	overflow:hidden;
+	background-color: gray;
+	font-size:0.8em;
+	color:white;
+	display:block;
+	}
+	
+	.dealer-bar {
+	height:50px;
+	max-height:50px;
+	overflow:hidden;
+	background-color: black;
+	font-size:2.0em;
+	color:white;
+	padding:0px 35px 0px 35px;
+	display:block;
+	}
+	
+.tabs-bar {
+	width:100%;
+	height:42px;
+	max-height:42px;
+	overflow:hidden;
+	background-color: grey;
+	display:block;
+	}	
+	
+.main-title-bar {
+	height:50px;
+	overflow:hidden;
+	background-color: white;
+	font-size:2.0em;
+	text-align: center;
+	display:block;
+	}	
+	
+.content-wrapper {
+	width:100%;	
+	padding: 0px 35px 35px 35px;
+	overflow:hidden;
+	background-color: white;
+	display:block;
+}
+
+.tryp-row {
+	background-color: pink;
+	clear:both;
+	display:block;
+}
+
+.tryp-block {
+	width:318px;
+	overflow:hidden;
+float:left;
+display:block;
+min-height:10px;
+
+}
+
+.tryp-item-head {
+	width:318px;
+	overflow:hidden;
+	height:40px;
+	font-size:1.4em;
+	display:block;
+	text-transform: uppercase;
+}
+
+
+.tryp-item-block {
+	width:318px;
+	overflow:hidden;
+	height:121px;
+	display:block;
+}
+
+
+.tryp-item-img {
+	width:100px;
+	overflow:hidden;
+	height:121px;
+	float:left;
+	display:block;
+}
+
+.tryp-item-spacer {
+	min-width:10px;
+	overflow:hidden;
+	height:121px;
+	float:left;
+	display:block;
+}
+
+.tryp-item-text-block {
+	width:209px;
+	overflow:hidden;
+	height:121px;
+	float:left;
+	display:block;
+}
+
+
+.tryp-item-text-logo {
+	clear:both;
+	width:160px;
+	height:20px;
+	max-width: 160px;
+	max-height: 20px;
+	display:block;
+}
+
+.tryp-item-text-series {
+		font-size:1.4em;
+		display:block;
+	
+}
+
+.tryp-item-text-form {
+		font-size:1.0em;
+		display:block;
+}
+
+

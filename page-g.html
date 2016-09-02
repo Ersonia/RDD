@@ -1,0 +1,189 @@
+<!--
+APP PAGE G PRODUCT PAGE
+product is single product
+CurrentFeature is a single app_features element from many filtered by products series
+
+DEBUG div start 32 div end 32 corrected GS 22-06-16 
+--> 
+
+<!--
+<style>
+.app_page_G_class
+{
+  background: url(img/MITS-RDD-APP-GRID-DEV-105-product.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:100vh;
+}
+
+</style>
+-->
+<style>
+.app_feature_item_selected
+{
+  background-color: #3f3f3f; 
+  color: #ffffff; 
+  margin-left: -0.2vh;
+  padding-left: 0.2vh;
+}
+
+</style>
+<!-- DIV app_page_G_id START -->
+<div class='app_page_G_class app_pages_class' id='app_page_G_id' ng-init='product=jsonNg.app_products.Data'
+     ng-init='CurrentSeriesID=CurrentSeriesID'>
+     <!--
+PAGE G Series Page: Series ID= {{CurrentSeriesID}}
+-->
+<!-- DEBUG_START: start of left main?DEBUG_END -->
+    <div class='app_page_G_series_class'
+     ng-repeat='CurrentProduct in jsonNg.app_products.Data| filter:{APP_PROD_SERIES_ID:CurrentSeriesID}:true'>
+     
+	<div class='product-left-block product-left-block-main'>
+	
+		<div class='product-header-wrap'>
+	
+		<div class='product-series'>
+			<span ng-show="CurrentProduct.APP_PROD_FAMILY_NAME != ''">{{CurrentProduct.APP_PROD_FAMILY_NAME}}</span>  
+		</div>
+		<div class='product-specline'>
+			<span ng-show="CurrentProduct.APP_PROD_SPECLINE != ''">{{CurrentProduct.APP_PROD_SPECLINE}}</span>  
+		</div>
+		</div><!-- end header wrap-->
+
+
+
+		<!--START VARIABLE FEATURE OR PRODUCT-->
+		<div class='product-midrow'>
+			<div class='product-main-image'>
+			<span ng-show="CurrentProduct.APP_PROD_MAIN_IMG != ''">
+				<img class='product-main-image' src="img/{{CurrentProduct.APP_PROD_MAIN_IMG}}">
+			</span>  
+			</div>
+		
+			 <div class='product-middle-block'>
+             
+             
+             
+             
+             	<span class='product-model-head'>model</span>
+				<span class='product-capacity-head'></span><br>
+                 
+                 
+				 <div  class='product-model-capacity-wrap' ng-repeat='CurrentModel in jsonNg.specifications.Data | filter:{APP_SERIES_ID:CurrentProduct.APP_PROD_SERIES_ID}:true'>
+				
+					<!-- repeat for each specifications@eud -->
+					<span class='product-model'>{{CurrentModel.MODEL}}</span>
+					<span class='product-capacity'>{{CurrentModel.N_1_5}} kg</span><br>
+					<!-- repeat end -->
+				  </div>
+			  </div>
+		</div>
+    
+    
+		 <div class='product-body'>
+			<span ng-show="CurrentProduct.APP_PROD_BODY != ''">{{CurrentProduct.APP_PROD_BODY}}</span>    
+		</div>
+   
+	<!--END VARIABLE FEATURE OR PRODUCT-->
+	<!-- DEBUG_START: end of left main?DEBUG_END -->
+	</div><!-- end left block main-->
+
+	<!-- feature div changes as the user selects a feature via NgFeature(...) in Ng controllers-->
+	<div class='product-left-block product-left-block-feature' id='app_feature-div'>
+	<!-- DEBUG_START:start of header wrap:DEBUG_END -->
+	<!-- DEBUG 
+		<span ng-show="Feature.APP_FEATURE_ID != ''">{{Feature.APP_FEATURE_ID}}</span> : 
+		<span ng-show="Feature.APP_FEATURE_CODE != ''">{{Feature.APP_FEATURE_CODE}}</span> : 
+		<span ng-show="Feature.APP_FEATURE_SERIES_ID != ''">{{Feature.APP_FEATURE_SERIES_ID}}</span> : 
+		<span ng-show="Feature.APP_FEATURE_DISPLAY_ORDER != ''">{{Feature.APP_FEATURE_DISPLAY_ORDER}}</span> : 
+		<span ng-show="Feature.APP_FEATURE_MENU != ''">{{Feature.APP_FEATURE_MENU}}</span> : 
+		
+		-->
+		
+		<div class='product-header-wrap'>
+	
+		<div class='product-series'>
+		<span ng-show="CurrentProduct.APP_PROD_FAMILY_NAME != ''">{{CurrentProduct.APP_PROD_FAMILY_NAME}}</span>  
+		</div>
+		<div class='product-specline'>
+		<span ng-show="CurrentProduct.APP_PROD_SPECLINE != ''">{{CurrentProduct.APP_PROD_SPECLINE}}</span>  
+		</div>
+	<!-- DEBUG_START:End of header wrap:DEBUG_END -->
+	</div><!-- end header wrap-->
+	
+	
+	<!--a href="javascript:hideshow(document.getElementById('features_mainpic_big_fullscreen'))">
+	
+		<div class='features_mainpic_big'><img class='features_mainpic_big' ng-show="Feature.APP_FEATURE_IMG_BIGMAIN != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_BIGMAIN}}'/>
+		</div>
+		</a-->
+		
+		<div class='features_mainpic_big' ><img class='features_mainpic_big' ng-click='BigPicture($event)' ng-show="Feature.APP_FEATURE_IMG_BIGMAIN != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_BIGMAIN}}'/></div>
+		<div class='features_minscolumn'>
+		<!-- DEBUG_START:Start of features_minscolumn -->
+		<div class='features_minpictop'><img class='features_minpictop' ng-show="Feature.APP_FEATURE_IMG_MIN_1 != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_MIN_1}}'/></div>
+		<div class='features_minpicbottom'><img class='features_minpicbottom' ng-show="Feature.APP_FEATURE_IMG_MIN_2 != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_MIN_2}}'/></div>
+		<!-- DEBUG_START:End of features_minscolumn -->
+		</div>
+		 
+			
+	
+		
+		<div ><img class='features_icon' ng-show="Feature.APP_FEATURE_IMG_ICON != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_ICON}}'/></div>
+	  
+		<div class='features_body'><span ng-show="Feature.APP_FEATURE_BODY != ''">{{Feature.APP_FEATURE_BODY}}</span></div>
+		
+	</div><!-- end left block feature-->
+
+
+	<div class='product-right-block'>
+	<!-- DEBUG_START:Start of right div:DEBUG_END -->
+		<div class='product-right-logo'>
+		<span ng-show="CurrentProduct.APP_PROD_LOGO_LARGE != ''">
+			<img class='product-right-logo' src="img/{{CurrentProduct.APP_PROD_LOGO_LARGE}}">
+		</span>  
+		</div>
+		
+		
+		<div class='features-head'>Top Features:</div>
+		<!-- first features menu-->
+		<div class='features-list-block' ng-init='Features=jsonNg.app_features.Data'>
+		<!--NL changed 'limit to' from 10-to 25-->
+		<ul ng-repeat='CurrentFeature in Features  | filter:{APP_FEATURE_SERIES_ID:CurrentSeriesID}:true | limitTo:10 track by CurrentFeature.APP_FEATURE_ID'>
+			<!-- repeat for each feature-->
+			<li ng-class="{app_feature_item_selected:CurrentFeature.APP_FEATURE_ID==Feature.APP_FEATURE_ID}"><span class='app_menu_class noselect'  ng-swipe-left='NgFeature(CurrentFeature)' ng-swipe-right='NgFeature(CurrentFeature)' ng-mousedown='NgFeature(CurrentFeature)'>{{CurrentFeature.APP_FEATURE_MENU}}</span></li>
+		</ul>
+		</div>
+		
+		<!-- NAV -->
+		
+		<div class='feature-navblock'>
+	
+	   
+		<!-- back to product intro-->
+		<div class='icon-left' ng-show="NgCheckCurrentFeature()" ng-mousedown='NgFeatureInit()'><img class='icon-left' src='img/nav-icon-left-solid.png'><br><div class='button_label'><!--initial--></div></div>
+	
+		<!-- to this product parent menu-->
+		<div class='icon-manu-group'  ng-mousedown='NgProductGroupPage(CurrentNumber)'><img class='icon-manu-group' src='img/nav-icon-range-solid.png'><br><div class='button_label'><!--{{CurrentNumber}}-Range--></div></div>
+		
+		</div>
+			
+			<!-- end NAV -->
+		<!-- DEBUG_START:End of right div:DEBUG_END -->
+		</div><!-- end right block -->
+    
+
+        <div ID='features_mainpic_big_fullscreen' style='display:none;' onclick='$(this).hide()'>
+        	<img class='mainpic_big_fullscreen' ng-show="Feature.APP_FEATURE_IMG_BIGMAIN != ''"  ng-src='img/{{Feature.APP_FEATURE_IMG_BIGMAIN}}'/>        
+        	<div class='closebigpic-icon-left'><img class='icon-left' src='img/nav-icon-left-light.png'></div>
+         </div>
+<!-- DEBUG_START:End of G page div? :DEBUG_END -->
+</div>
+</div>
+
+
+
+
+

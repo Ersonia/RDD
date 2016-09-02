@@ -1,0 +1,73 @@
+<!--
+APP PAGE A LOGIN
+dealer is 1:ALL in app_dealers
+-->
+<style>
+.app_page_A_class
+{
+  background: url(img/RDD_APP_SPLASH_LOGIN_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+    height:100vh;
+}
+</style>
+
+
+
+
+<div class='app_page_A_class app_pages_class' id='app_page_A_id'>
+
+<div class='login-paswords-panel'>
+
+<B>Dealership Name: </B> [ PASSWORD ] <BR>
+<HR>
+    <ul class='login-paswords-panel-item'>
+	<li class='login-paswords-panel-item' ng-repeat="dealer in jsonNg['app_dealers'].Data | orderBy:'APP_DEALER_NAME_MASTHEAD'">
+	<span id={{'APP_DEALER_'+dealer.APP_DEALER_ID}}>
+	
+    <!--
+    {{dealer.APP_DEALER_ID}} :
+	<B>{{dealer.APP_DEALER_SUPER_ID}}</B> :
+    -->
+    
+	<B>{{dealer.APP_DEALER_NAME_MASTHEAD}}</B>:
+    
+	[ {{dealer.APP_DEALER_PASSWORD}} ]
+	</span>
+	</li>
+    </ul>   
+    
+    <HR>
+    This panel will be removed.<BR>
+
+</div>
+
+    <div class='login-panel'>
+    <div class="app_central" id="app_central"></div>
+    </div>
+    
+    
+    
+    <div class='login-back-button-panel'>
+
+<div class='login-back-button-text'>
+<span class='login-back-button-text'></span>
+</div>
+<!--
+<span class='login-back-button-text' ng-show="currentDealer.APP_DEALER_WHERE_BUTTON != ''">{{currentDealer.APP_DEALER_WHERE_BUTTON}}<BR></span>
+</div>
+-->
+
+<div class='login-back-button'>
+<span class='login-back-button' onclick='GoToPage("B")'>
+<img class='login-back-button' src='img/nav-icon-left-light.png'></span>
+</div>
+
+<!-- end button div -->
+</div>
+    
+    
+</div>

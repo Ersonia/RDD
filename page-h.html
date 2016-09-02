@@ -1,0 +1,77 @@
+
+<div class='app_page_H_class app_pages_class' id='app_page_H_id'>
+    
+    
+<script type="text/javascript">
+
+window.addEventListener('load', eventWindowLoaded, false);
+function eventWindowLoaded() {
+   var videoElement = document.getElementById("thevideo");
+
+   videoElement.addEventListener('progress',updateLoadingStatus,false);
+   videoElement.addEventListener('canplaythrough',playVideo,false);
+   //playVideo()
+
+}
+
+function updateLoadingStatus() {
+
+   var loadingStatus = document.getElementById("loadingStatus");
+   var videoElement = document.getElementById("thevideo");
+   var percentLoaded = parseInt(((videoElement.buffered.end(0) /
+      videoElement.duration) * 100));
+    document.getElementById("loadingStatus").innerHTML =   percentLoaded + '%';
+
+}
+
+function playVideo() {
+   var videoElement = document.getElementById("thevideo");
+   videoElement.play();
+
+}
+</script>
+    <!--
+Page H Dev Test Page
+<input type="range" min="200" max="1024" step="50" id="myVideoSlider" value="1024" oninput="document.getElementById('rddvideo').width = this.value;"/>
+ <BR>   
+ -->
+ 
+ <div class='video-wrapper-169'>
+ 
+ 
+    <video class="video-field-169" preload='auto' id='rddvideo' controls poster="img/MFT-MHI-2016-with-voice-01.jpg" >
+      <source src="img/MFT-MHI-2016-with-voice-01.mp4" type="video/mp4">
+      
+      <img class="video-field-169"  src="img/MFT-MHI-2016-with-voice-01.jpg" >
+      
+      
+      <!--
+      <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
+      <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">
+      -->
+      Your browser doesn't support HTML5 video tag.
+    </video>
+    
+    <div id="loadingRDDStatus"></div>
+    
+    
+    
+
+
+
+
+<!--
+<button onclick="alert(cordova.file.applicationDirectory)" value="test">Info</button>    
+<span class='app_menu_class app_where_we_are_button' onclick='GoToPage("E")'></span>
+-->
+
+<!-- close-video-wrapper -->
+</div>
+
+<div class='video-back-button'>
+<span class='app_menu_class video-back-button' onclick='GoBack()'>
+<img class='dealer-video-back-button' src='img/nav-icon-left-solid.png'></span>
+</div>
+
+<!-- close-page class -->
+</div>

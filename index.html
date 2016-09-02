@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<!-- Quosoft Documentation Header -->
+
+<html ng-app='RDDApp'>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+<meta name="viewport" content="user-scalable=yes, initial-scale=1, maximum-scale=20, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
+
+<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" /-->
+<!--script src="http://code.jquery.com/jquery-1.7.1.min.js"></script-->
+<!--link rel="manifest" href="manifest.json"-->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+<!--script src="js/jquery.mobile-1.4.5.min.js"></script-->
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-touch.min.js"></script>
+
+
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript" src="json/app_data.js"></script>
+<script src="js/controllers.js"></script>
+
+<script type="text/javascript">
+init()
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/rdd-app.css"/>
+<link rel="stylesheet" type="text/css" href="css/rddapp-fonts.css"/>
+<link rel="stylesheet" href="css/grid.css"/>
+<!--script src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script-->
+
+
+<title>Red Diamond App</title>
+<style>
+    .noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}
+</style>
+</head>
+
+<body ng-controller="RDDAppCtrl">
+
+<!-- APP TRIGGER SETUP --> 
+<input id='app_dealer_id' type='text' ng-model='dealerSuperID' style='display:none;'/>
+
+<!-- APP MAIN DIV START --> 	
+<div class="app_main page-wrapper">
+
+<div class='system-bar'><img class='system-bar' src='img/status_bar.png'></div>
+
+<!-- APP DEALER DISPLAY BAR START --> 	
+<div class='app_dealer_display_bar_class' id='app_dealer_display_bar_id'>{{currentDealer.APP_DEALER_NAME_MASTHEAD}}
+
+<!-- APP DROPDOWN MENU START --> 	
+<div class="app-dropdown-menu" id="app-dropdown-menu-id">
+    <img style='float:right;' class='app-menu-ching' src='img/menu-bar-101.png'>    
+    <div class="app-dropdown-menu-content" id="app-dropdown-menu-content-id">
+	<span class="app-dropdown-menu-logo-on" style='float:right;' onclick='RemoveDropDownMenu()'><img class='app-menu-ching' src='img/menu-bar-101.png'></span>
+	<BR><BR>
+	<ul class='app_dropdown_menu_ul' ng-init="product_groups=jsonNg['app_product_groups'].Data">
+	    <li>
+	    <span class='app_dropdown_menu_item noselect app_dropdown_product_group'  onmousedown='GoToPage("F",1)'>{{product_groups[0].APP_PROD_GROUP_TAB_TITLE}}</span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect app_dropdown_product_group'  onmousedown='GoToPage("F",2)'>{{product_groups[1].APP_PROD_GROUP_TAB_TITLE}}</span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect app_dropdown_product_group'  onmousedown='GoToPage("F",3)'>{{product_groups[2].APP_PROD_GROUP_TAB_TITLE}}</span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect app_dropdown_product_group'  onmousedown='GoToPage("F",4)'>{{product_groups[3].APP_PROD_GROUP_TAB_TITLE}}</span>
+	    </li>
+	    
+	    <li>
+	    <span class='app_dropdown_menu_item noselect app_dropdown_dealer_menu' onmousedown='GoToPage("D")'>About <span id='app_dealer_name_id'></span></span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect' onmousedown='GoToPage("C")' onclick='GoToPage("C")'>About Mitsubishi</span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect'  onmousedown='GoToPage("A")'>Login Page</span>
+	    </li>
+	    <li>
+	    <span class='app_dropdown_menu_item noselect'  onmousedown='GoToPage("B")'>Launch Page</span>
+	    </li>
+	    
+        <!--<li>
+	    <span class='app_dropdown_menu_item noselect' onmousedown='GoToPage("H")'>Dev Page</span>
+	    </li> 
+        -->
+	</ul>
+    </div>
+</div><!-- end of dropdown menu -->
+
+</div><!-- end of app dealer bar -->
+
+<div ng-include="'page-a.html'"></div>
+<div ng-include="'page-b.html'"></div>
+<div ng-include="'page-c.html'"></div>
+<div ng-include="'page-d.html'"></div>
+<div ng-include="'page-e.html'"></div>
+<div ng-include="'page-f.html'"></div>
+<div ng-include="'page-g.html'"></div>
+<div ng-include="'page-h.html'"></div>
+
+
+</div><!-- end of app container div?-->
+
+<!-- APP SYSTEMS END --> 
+
+<!--<div class="app">
+<div id="deviceready" class="blink">
+<p class="event listening"></p>
+<p class="event received">Received</p>
+</div>
+</div>-->
+
+<!--script type="text/javascript" src="cordova.js"></script-->
+
+
+
+</body>
+</html>

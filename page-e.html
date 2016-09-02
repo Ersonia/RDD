@@ -1,0 +1,166 @@
+
+<!--
+APP PAGE E DEALER MAP PAGE
+currentDealer is the dealer logged in and is available to all pages
+--> 
+
+<style>
+.app_page_E_class
+{
+
+	/*
+	
+	TRACING IMAGE
+	
+	  background: url(img/MITS-RDD-APP-GRID-DEV-105-dealer-2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:100vh;
+	*/
+	
+	
+}
+.app_dealer_back_button
+{
+    width: 30vw;
+    height: 15vh;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+</style>
+
+
+
+<div class='app_page_E_class app_pages_class' id='app_page_E_id'>
+
+
+<!-- temp 
+<div style='padding:50; background-color:white;z-layer:5000;
+
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";       /* IE 8 */
+filter: alpha(opacity=50);  /* IE 5-7 */
+-moz-opacity: 0.5;          /* Netscape */
+-khtml-opacity: 0.5;        /* Safari 1.x */
+opacity: 0.5;               /* Good browsers */
+'>
+
+div-->
+
+
+
+
+
+
+<div class='dealer-map-image-wrapper'>
+<div class='dealer-map-image'><img class='dealer-map-image' src='img/{{currentDealer.APP_DEALER_IMG_3}}'>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class='dealer-map-address-panel-wrapper' >
+
+<div class='dealer-map-address-dealername' >
+<span ng-show="currentDealer.APP_DEALER_NAME_MASTHEAD != ''">{{currentDealer.APP_DEALER_NAME_MASTHEAD}}<BR></span>
+</div>
+
+<div class='dealer-map-address-depotname' >
+<span ng-show="currentDealer.APP_DEALER_DEPOT_NAME_1 != ''">{{currentDealer.APP_DEALER_DEPOT_NAME_1}}<BR></span>
+</div>
+
+<div class='dealer-map-address-text1' >
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1_1 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1_2 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1_3 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1_3}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1_4 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1_4}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1_5 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1_5}}<BR></span>
+</div>
+
+<div class='dealer-map-address-depotname' >
+<span ng-show="currentDealer.APP_DEALER_DEPOT_NAME_2 != ''">{{currentDealer.APP_DEALER_DEPOT_NAME_2}}<BR></span>
+</div>
+
+<div class='dealer-map-address-text1' >
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2_1 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2_2 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2_3 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2_3}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2_4 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2_4}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2_5 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2_5}}<BR></span>
+</div>
+
+<div class='dealer-map-address-website' >
+<span ng-show="currentDealer.APP_DEALER_URL != ''">{{currentDealer.APP_DEALER_URL}}<BR></span>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<div class='dealer-map-backbutton-panel'>
+
+
+<div class='dealer-map-backbutton-text'>
+<span ng-show="currentDealer.APP_DEALER_BACK_BUTTON != ''">{{currentDealer.APP_DEALER_BACK_BUTTON}}</span>
+</div>
+
+<div class='dealer-map-backbutton'>
+<span class='app_menu_class dealer-map-backbutton' onclick='GoToPage("D")'>
+<img class='dealer-map-backbutton' src='img/nav-icon-left-solid.png'></span>
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!--
+<span class='app_menu_class app_dealer_back_button' onclick='GoToPage("D")'></span>
+-->
+
+<!-- temp wrapper 
+</div>
+end -->
+
+
+<!-- page end -->
+</div>
+
+
+
+<!-- SOURCE REFS 
+
+<span ng-show="currentDealer.APP_DEALER_NAME_MASTHEAD != ''">{{currentDealer.APP_DEALER_ID}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_SUPER_ID != ''">{{currentDealer.APP_DEALER_SUPER_ID}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_NAME_MASTHEAD != ''">{{currentDealer.APP_DEALER_NAME_MASTHEAD}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_PASSWORD != ''">{{currentDealer.APP_DEALER_PASSWORD}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_BODY_1 != ''">{{currentDealer.APP_DEALER_BODY_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_BODY_2 != ''">{{currentDealer.APP_DEALER_BODY_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_IMG_1 != ''">{{currentDealer.APP_DEALER_IMG_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_IMG_2 != ''">{{currentDealer.APP_DEALER_IMG_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_IMG_3 != ''">{{currentDealer.APP_DEALER_IMG_3}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_NAME_1 != ''">{{currentDealer.APP_DEALER_DEPOT_NAME_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_1 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_1}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_NAME_2 != ''">{{currentDealer.APP_DEALER_DEPOT_NAME_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_DEPOT_DATA_2 != ''">{{currentDealer.APP_DEALER_DEPOT_DATA_2}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_URL != ''">{{currentDealer.APP_DEALER_URL}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_WHERE_BUTTON != ''">{{currentDealer.APP_DEALER_WHERE_BUTTON}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_BACK_BUTTON != ''">{{currentDealer.APP_DEALER_BACK_BUTTON}}<BR></span>
+<span ng-show="currentDealer.APP_DEALER_ABOUT_BUTTON != ''">{{currentDealer.APP_DEALER_ABOUT_BUTTON}}<BR></span>
+
+-->

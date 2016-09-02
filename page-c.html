@@ -1,0 +1,108 @@
+<!--
+APP PAGE C MITS ABOUT
+RDDroot is app_roots data item 0 (the first and currently only record)
+--> 
+
+<style>
+.app_page_C_class
+{
+ 
+ /*
+  background: url(img/RDD-Mitsubishi-World-placeholder-01.jpg) no-repeat center center fixed; 
+ */
+  
+  background: url(img/RDD-Mitsubishi-World-placeholder-03a.jpg) no-repeat center center fixed;  
+  
+  
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    height:100vh;
+}
+</style>
+
+
+<div class='app_page_C_class app_pages_class' id='app_page_C_id' ng-init='RDDroot=jsonNg.app_roots.Data[0]'>
+
+
+
+
+<div class='mits-body-panel-1'>
+
+<div class='class='mits-text-1-1'>
+<span class='mits-text-1-1' ng-show="RDDroot.APP_ROOT_MITSI_BODY_1 != ''">{{RDDroot.APP_ROOT_MITSI_BODY_1}}<br></span>
+</div>
+
+<div class='class='mits-text-1-2'>
+<span class='mits-text-1-2' ng-show="RDDroot.APP_ROOT_MITSI_BODY_2 != ''">{{RDDroot.APP_ROOT_MITSI_BODY_2}}</span>
+</div>
+
+</div>
+
+
+
+
+<div class='mits-body-panel-2'>
+
+<div class='class='mits-text-2-1'>
+<span class='mits-text-2-1' ng-show="RDDroot.APP_ROOT_MITSI_TAG != ''">{{RDDroot.APP_ROOT_MITSI_TAG}}</span>
+</div>
+
+<div class='class='mits-text-2-2'>
+<span class='mits-text-2-2' ng-show="RDDroot.APP_ROOT_MITSI_ABOUT != ''">{{RDDroot.APP_ROOT_MITSI_ABOUT}}</span>
+</div>
+
+</div>
+
+
+
+
+<!--
+    <div>PAGE C : Mitsubishi landing page.</div>
+    <div>{{RDDroot.APP_ROOT_MITSI_BODY_1}}</div>
+    <div><span class='app_menu_class' onclick='GoBack()'><< BACK ICON <<</span></div>
+    
+-->
+    
+    
+    
+    <!-- NOT FOR USE div ng-repeat="Field in jsonNg['app_roots'].Fields">
+<xmp><span ng-show="</xmp>RDDroot.{{Field}}<xmp> != ''">{{</xmp>RDDroot.{{Field}}<xmp>}}<BR></span></xmp-->
+
+
+<div class='mits-back-button-panel'>
+ 
+<div class='mits-back-button'>
+<span class='app_menu_class mits-back-button' onclick='GoBack()'>
+<img class='mits-back-button' src='img/nav-icon-left-solid.png'></span>
+</div>
+
+<div class='mits-back-button-text'>
+<span class='mits-back-button-text' ng-show="RDDroot.APP_ROOT_MITSI_BACK != ''">{{RDDroot.APP_ROOT_MITSI_BACK}}<BR></span>
+</div>
+
+</div>
+<!--
+
+<span ng-show="RDDroot.APP_ROOT_ID != ''">{{RDDroot.APP_ROOT_ID}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_IMG != ''">{{RDDroot.APP_ROOT_LOGIN_IMG}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_LOGIN != ''">{{RDDroot.APP_ROOT_LOGIN_LOGIN}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_ERROR_IMG != ''">{{RDDroot.APP_ROOT_LOGIN_ERROR_IMG}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_ERROR_HEAD != ''">{{RDDroot.APP_ROOT_LOGIN_ERROR_HEAD}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_ERROR_BODY != ''">{{RDDroot.APP_ROOT_LOGIN_ERROR_BODY}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_LOGIN_ERROR_BACK != ''">{{RDDroot.APP_ROOT_LOGIN_ERROR_BACK}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_HOME_IMG != ''">{{RDDroot.APP_ROOT_HOME_IMG}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MAIN_MENU != ''">{{RDDroot.APP_ROOT_MAIN_MENU}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_IMG != ''">{{RDDroot.APP_ROOT_MITSI_IMG}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_BODY_1 != ''">{{RDDroot.APP_ROOT_MITSI_BODY_1}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_BODY_2 != ''">{{RDDroot.APP_ROOT_MITSI_BODY_2}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_TAG != ''">{{RDDroot.APP_ROOT_MITSI_TAG}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_BACK != ''">{{RDDroot.APP_ROOT_MITSI_BACK}}<BR></span>
+<span ng-show="RDDroot.APP_ROOT_MITSI_ABOUT != ''">{{RDDroot.APP_ROOT_MITSI_ABOUT}}<BR></span>
+
+-->
+
+<BR>
+</div>
+</div>

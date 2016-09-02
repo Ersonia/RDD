@@ -1,0 +1,228 @@
+<!--
+APP PAGE F PRODUCT GROUPS PAGE
+product_groups is ALL app_product_groups
+product is single item from app_products 
+--> 
+
+
+
+<!--GS-->
+<div class='app_page_F_class app_pages_class' id='app_page_F_id'>
+
+<!-- start status and navigation page -->
+<!--
+<div class='system-bar'>SYSTEM</div>
+<div class='dealer-bar'>Anydealer Mitsubishi Ltd</div>
+-->
+
+
+
+
+<div class="app_page_F_tabs_container" ng-init='product_groups=jsonNg.app_product_groups.Data'>
+<ul class="tabs">
+<li class="tab-link tab-link-light current" id='tab-link-1' data-tab="tab-1">{{product_groups[0].APP_PROD_GROUP_TAB_TITLE}}</li><!--
+--><li class="tab-link tab-link-dark" id='tab-link-2' data-tab="tab-2">{{product_groups[1].APP_PROD_GROUP_TAB_TITLE}}</li><!--
+--><li class="tab-link tab-link-light" id='tab-link-3' data-tab="tab-3">{{product_groups[2].APP_PROD_GROUP_TAB_TITLE}}</li><!--
+--><li class="tab-link tab-link-dark" id='tab-link-4' data-tab="tab-4">{{product_groups[3].APP_PROD_GROUP_TAB_TITLE}}</li>
+</ul>
+<div ng-repeat="n in [1,2,3,4]">
+
+
+
+<div id="tab-{{n}}" class="tab-content current" ng-init='current_product_group=product_groups[n-1]'
+
+>
+<div class='content-wrapper'>
+
+
+<div class='main-title-bar'>
+<!--{{current_product_group.APP_PROD_GROUP_PAGE_TITLE}}:{{current_product_group.APP_PROD_GROUP_NAME}}-->
+{{current_product_group.APP_PROD_GROUP_PAGE_TITLE}}
+
+</div>
+    
+    
+    
+<div class='tryp-row'>
+
+            
+            
+<!--START TRYP BLOCK - R1 C1  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R1_C1_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R1_C1_PRODUCTS.split(',')">
+<div  ng-show="series!=''"  class='app_menu_class'  ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true | limitTo:1">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+
+
+
+
+<!--START TRYP BLOCK - R1 C2  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R1_C2_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R1_C2_PRODUCTS.split(',')">
+<div  ng-show="series!=''" class='app_menu_class'  ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+
+
+
+<!--START TRYP BLOCK - R1 C3  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R1_C3_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R1_C3_PRODUCTS.split(',')">
+<div  ng-show="series!=''" class='app_menu_class' ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+            
+            
+            
+</div><!--end tryp-TOP row-->
+
+
+
+
+
+<div class='tryp-row'>
+
+            
+            
+<!--START TRYP BLOCK - R2 C1  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R2_C1_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R2_C1_PRODUCTS.split(',')">
+<div  ng-show="series!=''" class='app_menu_class'  ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+
+
+
+
+<!--START TRYP BLOCK - R2 C2  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R2_C2_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R2_C2_PRODUCTS.split(',')">
+<div  ng-show="series!=''" class='app_menu_class' ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+
+
+
+
+<!--START TRYP BLOCK - R2 C3  -->
+
+<div class='tryp-block'>
+<div class='tryp-item-head'>{{current_product_group.APP_PROD_GROUP_R2_C3_TITLE}}</div><!--end tryp-item-head--> 
+
+<div class='tryp-item-block' ng-repeat="series in current_product_group.APP_PROD_GROUP_R2_C3_PRODUCTS.split(',')">
+<div  ng-show="series!=''" class='app_menu_class'  ng-mousedown='SetSeries(series,current_product_group)'>
+<div ng-repeat="current_product in jsonNg.app_products.Data | filter:{APP_PROD_SERIES_ID:series}:true">
+<div class='tryp-item-img'><img class='tryp-item-img' src='img/{{current_product.APP_PROD_THUMB_IMG}}'></div>
+<div class='tryp-item-img-spacer'></div>
+<div class='tryp-item-text-block'>
+<div class='tryp-item-text-logo'><img class='tryp-item-text-logo' src='img/{{current_product.APP_PROD_LOGO_SMALL}}'></div>
+<div class='tryp-item-text-series'>{{current_product.APP_PROD_FAMILY_NAME}}</div>
+<div class='tryp-item-text-form'>{{current_product.APP_PROD_FORM_FACTOR}}</div>
+</div><!-- end item text block -->
+</div>
+</div><!-- end show hide -->
+<div ng-show="series==''"></div>
+</div><!-- end item block -->
+</div><!-- end tryp block -->
+
+
+            
+            
+            
+</div><!--end tryp-BOT row-->
+
+        
+    
+    
+</div>
+<!-- end content wrapper -->
+
+
+
+
+
+
+
+</div>
+</div><!--end wrap-->
+
+</div><!--end of 0,1,2,3 tab contents-->
+</div><!-- app_page_F_tabs_container -->
+</div><!-- end of F page --> 
+

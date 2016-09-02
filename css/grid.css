@@ -1,0 +1,970 @@
+
+body,td,th {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#3A3A3A;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color:white;
+}
+
+.page-wrapper {
+	width:100vw;;
+	height:100vh;
+	margin-left:auto;
+	margin-right:auto;]
+	display:block;
+	}
+
+.system-bar {
+	width:100vw;
+	height:2.60412vh;
+	max-height:2.60412vh;
+	overflow:hidden;
+	background-color: gray;
+	font-size:1.664vh;
+	color:white;
+	display:block;
+	}
+	
+	.dealer-bar {
+	height:6.5vh;
+	max-height:6.5vh;
+	overflow:hidden;
+	background-color: black;
+	font-size:4.16vh;
+	color:white;
+	padding:0vh 4.5vh 0px 4.0vh;
+	display:block;
+	}
+	
+.tabs-bar {
+	width:100vw;
+	height:5vh;
+	max-height:5vh;
+	overflow:hidden;
+	background-color: grey;
+	display:block;
+	}	
+	
+.main-title-bar {
+	height:6.5vh;
+	overflow:hidden;
+	background-color: white;
+	font-size:4.16vh;
+	text-align: center;
+	display:block;
+	padding-top:2vh;
+	}	
+	
+.content-wrapper {
+	padding: 0vh 4.5vh 4.5vh 4.5vh;
+	overflow:hidden;
+	background-color: white;
+	display:block;
+	width:100%;
+}
+
+
+
+
+/* BUTTONS */
+
+
+
+.closebigpic-icon-left {
+   height: 11vh;
+   width: 11vh;
+	position: absolute;
+    left: 90vw;
+    top: 84.5vh;
+	z-index: 1500;
+}
+
+.button85 {
+   height: 11vh;
+   width: 11vh;
+	
+}
+
+.button_label {
+text-align: center;
+}
+
+.icon-right {
+   height: 11vh;
+   width: 11vh;
+    display:block;
+	float:left;
+	margin-left:0vh;
+}
+
+.icon-left {
+   height: 11vh;
+   width: 11vh;
+      display:block;
+	  	float:left;
+	margin-left:0vh;
+	}
+
+
+.icon-up {
+   height: 11vh;
+   width: 11vh;
+    display:block;
+		float:left;
+	margin-left:0vh;
+	}
+
+.icon-down {
+   height: 11vh;
+   width: 11vh;
+      display:block;
+	  	float:left;
+	margin-left:0vh;
+	}
+
+
+.icon-manu-ching {
+   height: 11vh;
+   width: 11vh;
+      display:block;
+	  	float:left;
+margin-right:0vh;}
+
+.icon-manu-group {
+   height: 11vh;
+   width: 11vh;
+      display:block;
+	  	float:left;
+margin-right:0vh;}
+
+/* END BUTTONS */
+
+
+
+/* styles for G page */
+
+
+
+
+
+#features_mainpic_big_fullscreen {
+	position: absolute;
+    left: 0vh;
+    top: 0vh;
+	height:100vh;
+	width:100vw;
+	z-index: 500;
+	background-color: #000000;
+	
+}
+
+
+.mainpic_big_fullscreen {
+	height:100vh;
+	background-color: #000000;
+}
+
+.feature-navblock {
+	position: absolute;
+    left: 85vh;
+    top: 82vh;
+	z-index: 500;
+}
+
+
+
+
+
+.product-left-block
+{
+margin-left:4.5vh;
+margin-right:4.5vh;
+width:77.5vh;
+max-width:77.5vh;
+display:block;
+float:left;
+}
+
+.product-header-wrap
+{
+width:77.5vh;
+max-width:77.5vh;
+height:11vh;
+min-height:11vh;
+}
+
+.product-series
+{
+padding-top:2.5vh;
+width:77.5vh;
+max-width:77.5vh;
+font-size:2.91vh;
+}
+
+.product-specline
+{
+width:77.5vh;
+max-width:77.5vh;
+font-size:2.08vh;
+}
+
+.product-midrow {
+	width:77.5vh;
+}
+
+.product-main-image
+{
+width:57.3vh;
+max-width:57.3vh;
+float:left;
+}
+
+.product-middle-block
+{
+	position: relative;
+    width: 100%;
+margin-left:2.6vh;
+width:17.5vh;
+max-width:17.5vh;
+font-size:2.08vh;
+float:left;
+}
+
+.product-model {
+	clear:both;
+	float:left;
+	border-top-style: solid;
+	margin-top:0px;
+	padding-top:0.25vh;
+	border-width: 0.13vh;
+	border-color: #A9A9A9;
+	width:16.9vh;
+	font-weight: bold;
+	
+}
+
+.product-capacity {
+	float:right;
+}
+
+
+
+.product-body
+{
+clear:both;
+display:block;
+width:77.5vh;
+max-width:77.5vh;
+font-size:2.91vh;
+margin-top:0px;
+}
+
+
+
+
+.product-right-block
+{
+width:44.27vh;
+max-width:44.27vh;
+min-height:85.6vh;
+max-height:85.6vh;
+font-size:2.08vh;
+float:left;
+}
+
+.product-right-logo
+{
+width:44.27vh;
+max-width:44.27vh;
+font-size:2.08vh;
+}
+
+.features-head
+{
+width:44.27vh;
+max-width:44.27vh;
+font-size:2.08vh;
+}
+
+.features-list-block
+{
+width:44.27vh;
+max-width:44.27vh;
+font-size:2.08vh;
+}
+
+.features-list-block li
+{
+
+font-size:2.08vh;
+list-style: none;
+    border-top-style: solid;
+	margin-top:0.5vh;
+	margin-bottom:0.5vh;
+	padding-top:0.5vh;
+	border-width: 0.13vh;
+	border-color: #A9A9A9;
+
+	
+}
+
+.product-left-block-feature
+{
+    display:none;
+}
+
+
+.features_mainpic_big {
+	width: 77.4739vh;
+    max-width: 77.4739vh;
+	height:55.09vh;
+    float: left;
+	margin-bottom:2.06vh;
+}
+
+
+
+.features_body {
+	margin-top:2.6vh;
+	width:66.0vh;
+	font-size:2.91vh;
+	max-height: 19.5vh;
+
+}
+
+.features_icon {
+		width:10.0vh;
+		margin-right:1.47vh;
+		margin-bottom:20.0vh;
+		display:inline-block;
+		float:left;
+
+}
+
+
+
+/* end gpage styles */
+
+
+
+
+
+/* START MAIN RANGE GRID PAGE */
+
+
+.tryp-row {
+	background-color: pink;
+	clear:both;
+	display:block;
+	margin-bottom:1vh;
+	margin-top:2.5vh;
+}
+
+.tryp-block {
+	width:41.4vh;
+	overflow:hidden;
+float:left;
+display:block;
+min-height:1.3vh;
+margin-bottom:2.6vh;
+
+}
+
+.tryp-item-head {
+	width:41.4vh;
+	overflow:hidden;
+	height:3.9vh;
+	font-size:2.496vh;
+	display:block;
+	text-transform: uppercase;
+}
+
+
+.tryp-item-block {
+	width:41.4vh;
+	overflow:hidden;
+	height:15.7vh;
+	display:block;
+	margin-top:2.6vh;
+}
+
+
+.tryp-item-img {
+	width:13vh;
+	overflow:hidden;
+	height:15.3646vh;
+	float:left;
+	display:block;
+	margin-right:0.52vh;
+}
+
+.tryp-item-spacer {
+	min-width:1.3vh;
+	overflow:hidden;
+	height:15.5vh;
+	float:left;
+	display:block;
+}
+
+.tryp-item-text-block {
+	width:27.21vh;
+	overflow:hidden;
+	height:15.7vh;
+	float:left;
+	display:block;
+}
+
+
+.tryp-item-text-logo {
+	clear:both;
+	width:20.8333vh;
+	height:2.6041vh;
+	display:block;
+	margin-bottom:0.65vh;
+	margin-left:0.0vh;
+}
+
+.tryp-item-text-series {
+		font-size:2.08vh;
+		display:block;
+			margin-bottom:0.65vh;
+font-weight: bold;	
+}
+
+.tryp-item-text-form {
+		font-size:1.872vh;
+		display:block;
+}
+
+
+/* END MAIN RANGE STYLES */
+
+
+
+/* DEALER INITIAL PAGE STYLES START */
+
+
+.dealer-initial-column-1 {
+	
+	height:100vh;
+	width:38.0vh;
+	overflow:hidden;
+	float:left;
+	display:block;
+	padding:5vh;
+	background-color:#ffffff;
+}
+
+
+.dealer-initial-column-2 {
+	
+height:100vh;
+width:85.333333vh;
+float:left;
+display:block;
+overflow:hidden;
+	
+}
+
+
+.dealer-initial-body-1 {
+	
+	font-weight: bold;
+font-size:2.91vh;
+margin: 0vh 0vh 1vh 0vh;
+	max-width:38vh;
+	
+}
+
+
+.video-wrapper-169 {
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	top:0vh;
+	left:0vh;
+	background-color:#000000;
+	
+	/*
+	background: url(img/video-background-logo-xga-x1.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  */
+  
+    z-index: 500;
+}
+
+
+
+.video-field-169 {
+	width:100vw;
+	
+}
+
+
+.video-back-button {
+	height: 11vh;
+	width:11vh;
+    top: 2.6vh;
+	z-index: 1500;
+	position: absolute;
+    left: 2.6vh;
+	z-index: 1500;
+}
+
+
+
+/*  end video */
+
+
+/*mits section */
+
+
+.mits-back-button {
+	
+	height: 11vh;
+	width:11vh;
+	
+	
+}
+
+
+.mits-back-button-panel {
+	position: absolute;
+	    top: 85.5vh;
+	z-index: 1500;
+	position: absolute;
+    left: 2.6vh;
+	height: 11vh;
+}
+
+
+
+.mits-body-panel-2 {
+	
+	position: absolute;
+    top: 78vh;
+	z-index: 1500;
+	position: absolute;
+    left: 60vh;
+	width: 78vh;
+	display:block;
+	
+}
+
+.mits-body-panel-1 {
+
+	position: absolute;
+    top: 08vh;
+	z-index: 1500;
+	position: absolute;
+    left: 60vh;
+	width: 60vh;
+	display:block;
+}
+
+
+.mits-text-1-1 {
+		color:white;
+			font-weight: bold;
+font-size:2.91vh;
+margin: 0vh 0vh 1vh 0vh;
+		display:block;
+}
+
+
+.mits-text-1-2 {
+		color:white;
+			font-weight: normal;
+font-size:2.91vh;
+margin: 0vh 0vh 1vh 0vh;
+	max-width:40vh;
+		display:block;
+}
+
+
+.mits-text-2-1 {
+		color:white;
+			font-weight: bold;
+font-size:4.16vh;
+margin: 0vh 0vh 1vh 0vh;
+	max-width:38vh;
+	
+}
+
+
+.mits-text-2-2 {
+		color:white;
+			font-weight: normal;
+font-size:4.16vh;
+margin: 0vh 0vh 1vh 0vh;
+	max-width:38vh;
+	
+}
+
+
+
+
+
+
+
+
+
+/* end mits */
+
+
+
+
+
+/* start login */
+
+
+.login-panel {
+
+/*
+margin-left: auto !important;
+margin-right: auto !important;
+*/
+}
+
+
+
+#app_login_id {
+	
+	
+	margin: 0vh 0vh 2vh 0vh;
+	
+font-weight: normal;
+font-size:4.16vh;
+padding: .5vh .5vh .5vh .5vh;
+background: rgba(255, 255, 255, 0.85);
+max-width:38vh;
+
+ -webkit-text-security: disc;
+ width:30vh;
+}
+
+
+
+.login-button {
+	
+	margin-left: auto !important;
+margin-right: auto !important;
+	
+	    background: #000000;
+    padding: 1vh 2vh 1vh 1vh;
+    border: none;
+    color: #fff;
+	font-size:4.16vh;
+	
+	}
+
+
+
+
+
+.login-paswords-panel {
+	
+	width:50vh;
+	position: absolute;
+    left: 2.6vh;
+    top: 2.6vh;
+	padding:1.5vh;
+		
+
+background: rgba(255, 255, 255, 0.6);
+
+	
+	
+	
+}
+
+.login-paswords-panel-item {
+	list-style-type:none;
+	margin: 0.5vh 0vh 0vh 0vh;
+}
+
+
+
+.login-back-button-text {
+	
+}
+
+.login-back-button-panel {
+	
+	height: 11vh;
+	width:50vh;
+	position: absolute;
+    left: 2.6vh;
+    top: 85.5vh;
+	z-index: 1500;
+	
+}
+
+
+.login-back-button {
+	
+		height: 11vh;
+	width:11vh;
+	
+}
+
+
+
+
+/* end login */
+
+
+
+/* start ealer */
+
+
+.dealer-initial-body-2 {
+	font-weight: normal;
+font-size:2.91vh;
+max-width:38vh;
+	
+}
+
+.dealer-initial-small-pic {
+	width:38vh;
+	position: absolute;
+    left: 2.6vh;
+    top: 31.5vh;
+	z-index: 500;
+	
+}
+
+.dealer-initial-big-pic {
+	height:100vh;
+width:85.333333vh;
+	overflow:hidden;
+}
+
+
+.dealer-initial-button-panel {
+	
+	height: 11vh;
+	width:50vh;
+	position: absolute;
+    left: 80vh;
+    top: 85.5vh;
+	z-index: 1500;
+	
+}
+
+.dealer-initial-button-text {
+	font-weight: normal;
+font-size:2.91vh;
+float:left;
+text-transform:uppercase;
+color:white;
+text-align: right;
+width: 35vh;
+margin: 4.2vh 1.5vh 0vh 0vh;
+	
+}
+
+.dealer-initial-button {
+		height: 11vh;
+		float:left;
+	
+}
+
+/* DEALER INITIAL PAGE STYLES END */
+
+
+
+/* DEALER MAP PAGE STYLES START */
+
+
+.dealer-map-image-wrapper {
+	height:89.84vh;
+	width:86.19vh;
+	overflow:hidden;
+float:left;
+display:block;
+}
+
+.dealer-map-image {
+	height:89.84vh;
+	height:89.84vh;
+	width:86.19vh;
+}
+
+.dealer-map-address-panel-wrapper {
+	
+	height:100vh;
+	width:47.0vh;
+	overflow:hidden;
+	float:left;
+	display:block;
+	padding:0vh;
+	background-color:#ffffff;
+	
+}
+
+.dealer-map-address-dealername {
+	font-weight: bold;
+	font-size:3vh;
+	margin: 4vh 5vh 0vh 6vh;
+}
+
+
+
+.dealer-map-address-depotname {
+	font-weight: normal;
+	font-size:3vh;
+	margin: 2vh 5vh 1vh 6vh;
+}
+
+.dealer-map-address-text1 {
+	font-weight: bold;
+	font-size:3vh;
+	margin: 1vh 5vh 1vh 6vh;
+	
+}
+
+.dealer-map-address-website {
+	font-weight: bold;
+	font-size:3vh;
+	margin: 2vh 5vh 1vh 6vh;
+}
+
+
+.dealer-map-backbutton-panel {
+	height: 11vh;
+	position: absolute;
+    left: 5.5vh;
+    top: 84.5vh;
+	z-index: 1500;
+	
+}
+
+.dealer-map-backbutton-text {
+	font-weight: bold;
+font-size:2.08vh;
+	
+}
+
+.dealer-map-backbutton {	
+	height: 11vh;
+   width: 11vh;	
+}
+
+/* DEALER MAP PAGE STYLES END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+temporary scaling and orientation hacks
+see: Screen Orientation API in this doc
+http://www.creativebloq.com/web-design/master-screen-orientation-html5-101517371
+*/
+
+
+/*
+portrait temp hack 
+also needs to resize height/width and be media size specific
+*/
+@media only screen 
+and (orientation : portrait) { 
+
+}
+
+
+/* device landscape over XGA */
+@media only screen 
+and (min-device-height : 769px) 
+and (orientation : landscape) { 
+
+}
+
+/* device landscape height*/
+@media only screen 
+and (min-device-height : 640px) 
+and (max-device-height : 767px) 
+and (orientation : landscape) { 
+
+}
+
+
+/* device landscape 480 height*/
+@media only screen 
+and (min-device-height : 480px) 
+and (max-device-height : 639px) 
+and (orientation : landscape) { 
+
+}
+
+
+
+/* device 414 iphone 6plus   height*/
+@media only screen 
+and (min-device-height : 414px) 
+and (max-device-height : 478px) 
+and (orientation : landscape) { 
+
+
+}
+
+
+/*iphone 6 landscape 375px height*/
+@media only screen 
+and (min-device-height : 375px) 
+and (max-device-height : 413px) 
+and (orientation : landscape) { /* STYLES GO HERE */
+
+
+}
+
+
+
+
+/*galaxy landscape 360px height*/
+@media only screen 
+and (min-device-height : 360px) 
+and (max-device-height : 374px) 
+and (orientation : landscape) { 
+
+
+}
+
+/* landscape 320 height iphone 5*/
+@media only screen 
+and (min-device-height : 320px) 
+and (max-device-height : 359px) 
+and (orientation : landscape) { 
+
+
+}
+
+
+/* landscape 320 height*/
+@media only screen 
+and (min-device-height : 20px) 
+and (max-device-height : 319px) 
+and (orientation : landscape) { 
+
+
+}
+
+
+

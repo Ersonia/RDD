@@ -1,0 +1,71 @@
+<!--
+APP PAGE B LANDING
+product_groups is ALL data from app_product_groups 
+-->
+<style>
+.app_page_B_class
+{	
+  background: url(img/RDD_APP_SPLASH_HOME_1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  height:100vh;
+}
+
+.main_menu_home {
+	margin-left:4.5vh;
+	margin: 2.6vh;
+    background-color: #000000;
+    opacity: 0.6;
+	min-width:44vh;
+	padding:1.3vh;
+	position: absolute;
+    bottom: 7vh;
+    left: 4.5vh;
+	color:white;
+	font-sizde:2.91vh;
+	
+}
+
+.main_menu_home li 
+{
+    list-style-type: none;
+	font-style:bold;
+}
+
+
+</style>
+<div class='app_page_B_class app_pages_class' id='app_page_B_id'>
+    <div>
+
+	<div class='main_menu_home'>Main Menu
+	<BR>
+	    <ul ng-init="product_groups=jsonNg['app_product_groups'].Data">
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("F",1)'>{{product_groups[0].APP_PROD_GROUP_TAB_TITLE}}</span>
+		</li>
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("F",2)'>{{product_groups[1].APP_PROD_GROUP_TAB_TITLE}}</span>
+		</li>
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("F",3)'>{{product_groups[2].APP_PROD_GROUP_TAB_TITLE}}</span>
+		</li>
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("F",4)'>{{product_groups[3].APP_PROD_GROUP_TAB_TITLE}}</span>
+		</li>
+		
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("D")'>About
+		<span id='app_dealer_name_id' ng-model='currentDealer'>{{currentDealer.APP_DEALER_NAME_MASTHEAD}}</span>
+		</span>
+		</li>
+		<li>
+		<span class='app_menu_class' onclick='GoToPage("C")'>About Mitsubishi</span>
+		</li>
+	    </ul>
+	</div>
+	
+    </div>
+</div>

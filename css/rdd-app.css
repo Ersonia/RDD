@@ -1,0 +1,224 @@
+
+*
+{
+    font-family: Swiss721TL-Roman, sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+.app_page_A_class
+{
+    background: url(img/PAGE_1_2048x1516.jpeg) ;
+    -webkit-background-size: 100% ; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: cover 100%;
+    width:100vw;
+    height:97vh;
+}
+
+.app_page_B_class
+{
+    background: url(img/PAGE_2_2048x1516.jpeg) ;
+    -webkit-background-size: 100% ; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: cover 100%;
+    width:100vw;
+    height:97vh;
+}
+
+.app_central {
+    position : absolute;
+    width    : 65vh;
+    height   : 20vh;
+    top      : 35vh;
+	left: 60vh;
+    background-color: transparent;
+}
+
+/* Optional manditory device bar */
+.app_device_top_bar_class
+{
+    height:3vh;
+    color: grey;
+    font-size: 2vh;
+    padding-left: 20vw;
+    
+}
+
+/* Optional dealer bar */
+.app_dealer_display_bar_class
+{
+    height:4vh;
+    vertical-align: middle;
+    display:block;
+    background-color: black;
+    color: white;
+    font-size: 3vh;
+    padding: 2vh;
+	padding-left:4.5vh;
+}
+
+.app_menu_class
+{
+    cursor:pointer;
+	font-size:1.4em;
+}
+
+.app_dealer_div_class
+{
+    float:left;
+}
+
+.app_page_E_tabs_container{
+	width: 100vw;
+	margin: 0 ;
+}
+
+ul.tabs{
+    background: #666666;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0.65vh;
+    list-style: none;	
+	  font-size: 2vh;  
+}
+
+
+ul.tabs li
+{
+    color: #ffffff;
+    display: inline-block;
+    padding: 2vh 1vw;
+    cursor: pointer;
+    width: 23%;   
+}
+
+ul.tabs li.tab-link-dark
+{
+    background: #666666;
+	border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+ul.tabs li.tab-link-light
+{
+    background: #bbbbbb;
+	border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+
+}
+
+ul.tabs li.current
+{
+    background: #ffffff;
+    color: #000000;
+    border: 0;
+    border-bottom-color: #ffffff;
+    border-left-color: #ffffff;
+    border-right-color: #ffffff;    
+    border-top-left-radius: 1vw;
+    border-top-right-radius: 1vw;
+}
+
+.tab-content
+{
+    display: none;
+    padding: 1vw;
+}
+
+.tab-content.current{
+    display: inherit;
+}
+
+.app-dropdown-menu
+{
+    position: relative;
+    float:right;
+    display: inline-block;
+    font-size: 2vh;
+}
+
+
+.app-menu-ching {
+	width:3.9vh;
+	height:3.9vh;
+	
+}
+
+
+.app-dropdown-menu-content
+{
+    display: none;
+    position: absolute;
+    right: 0vh;
+    top: 0vh;
+    color:#ffffff;
+    background-color: #666666;
+    min-width: 300px;
+    box-shadow: 0vh 1vh 2vh 0vh rgba(0,0,0,0.2);
+    padding: 0vh 0vh 2vh 2vh;
+    z-index: 2;
+    font-size:2.9vh;
+}
+
+/*
+.app-dropdown-menu:hover .app-dropdown-menu-content
+{
+    display: block;
+}
+
+.app-dropdown-menu:hover .app-dropdown-menu-logo
+{
+    display: none;
+}
+*/
+.app-dropdown-menu
+{
+    min-width: 39vh;
+}
+.app-dropdown-menu-logo-img
+{
+    align: right;
+}
+
+
+
+
+
+
+.app_dropdown_menu_ul
+{
+    list-style-type: none;
+}
+
+.app_dropdown_menu_item
+{
+    cursor:pointer;
+    display:block;
+    padding: 0.25vh;
+
+}
+
+.app_dropdown_menu_item:hover
+{
+    background-color:#000000; 
+}
+
+.app_product_group_table_cell_class
+{
+    padding-top: 3vh;
+    padding-left: 2vw;
+    padding-bottom: 3vh;
+    padding-right: 2vw;
+    
+}
+
+.app_pages_class
+{
+    display:none;
+}
+
